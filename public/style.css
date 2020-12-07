@@ -44,21 +44,6 @@ body {
     position: absolute;
 }
 
-.clock .hour, .hr {
-    width: 160px;
-    height: 160px;
-}
-
-.clock .min, .mn {
-    width: 190px;
-    height: 190px;
-}
-
-.clock .sec, .sc {
-    width: 230px;
-    height: 230px;
-}
-
 .hr, .mn, .sc {
     display: flex;
     justify-content: center;
@@ -95,4 +80,63 @@ body {
     background: #fff;
     z-index: 12;
     border-radius: 6px 6px 0 0;
+}
+
+@media (min-width: 600px) {
+    .clock {
+        width: 350px;
+        height: 350px;
+    }
+
+    .clock .hour, .hr {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .clock .min, .mn {
+        width: 190px;
+        height: 190px;
+    }
+    
+    .clock .sec, .sc {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 600px) {
+    .clock {
+        width: 250px;
+        height: 250px;
+    }
+
+    .clock .hour, .hr {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .clock .min, .mn {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .clock .sec, .sc {
+        width: 140px;
+        height: 140px;
+    }
+
+    .hr:before {
+        width: 6px;
+        height: 50px;
+    }
+
+    .mn:before {
+        width: 4px;
+        height: 50px;
+    }
+
+    .sc:before {
+        width: 2px;
+        height: 100px;
+    }
 }
